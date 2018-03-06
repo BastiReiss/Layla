@@ -1,0 +1,228 @@
+*{  font-family: 'Roboto';
+    margin: 0; 
+    padding: 0;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+#wrapper {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------ APP -------------------------------------------  */
+
+#app {
+    position: absolute;
+	border: 1px solid black;
+    width: 320px;
+    height: 568px;
+    top: 20%;
+    left: 30%;
+    background: linear-gradient(to bottom, hsl(123, 45%, 84%), hsl(160, 23%, 61%) ); 
+
+}
+
+#scene_msg {
+	position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 70%;
+    overflow: scroll;
+}
+
+.message_in {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: hsla(200,100%,100%,0.4);
+}
+
+.message_out {
+    display: block;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: hsla(200,100%,100%,0.5);
+}
+
+#top_nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #A9CBBE;
+}
+
+#BTN_layla {
+	position: absolute;
+    top: 12px;
+    left: 15px;
+    opacity: 0.7;
+    transition: opacity 0.1s ease-in;
+}
+#BTN_layla img{
+    position: absolute;
+	width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+
+#BTN_moodtracker {
+	position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 12px;
+    left: 84%;
+    opacity: 0.7;
+    transition: opacity 0.1s ease-in;
+}
+
+#bottom_nav {
+	position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 15%;
+    background-color: #A9CBBE;
+}
+
+
+i > img{
+    width: 100%;
+    height: 100%; 
+    opacity: 0.7;
+    transition: all 0.1s ease-in;
+}
+
+i > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#BTN_msg_plus{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    opacity: 0.7;
+    transition: opacity 0.1s ease-in;
+}
+
+#BTN_msg_send1 {
+    position: absolute;
+    top: 30px;
+    left: 270px;
+    opacity: 0.7;
+    transition: opacity 0.1s ease-in;
+}
+
+.nav_big {
+    top: 60%;
+    height: 40%;
+}
+
+
+
+
+#message_write {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    width: 60%;
+    height: 50px;
+    padding: 5px 5px;
+	background-color: hsla(128, 40%, 88%, 0.7 );
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+}
+
+#message_text {
+    display: block;
+    top: 10px;
+    width: 90%;
+    height: 30px;
+    margin: 5px auto;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: hsla(128, 40%, 88%, 0.1 );
+    resize: none;
+
+}
+
+
+.light_up{
+    opacity: 1;
+}
+
+
+/* ------------------------------ MOODTRACKER -------------------------------------------  */
+
+#mood_canvas {
+    position: absolute;
+	border: 1px solid black;
+    width: 320px;
+    height: 568px;
+    left: 0%;
+    /*
+    background: linear-gradient( hsl(100, 100%, 100%), hsl(160, 150%, 10%) );
+    */
+    background: url(../images/4cramp.jpg) 50% 50% no-repeat;
+    transition: all .5 ease;
+    z-index: 200;
+    color: #fff;
+}
+
+#trigger {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #fff;
+    background-color: inherit;
+    border-radius: 50%;
+    transition: all .5 ease-out;
+}
+
+#moodText {
+    position: absolute;
+    top: 2%;
+    left: 42%;
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+#saveMood {
+	position: absolute;
+    top: 88%;
+    width: 80%;
+    left: 10%;
+    height: 70px;
+    color: #fff;
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 1s ease;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mood</title>
+    <link rel="stylesheet" type="text/css" href="frontend/assets/css/mt.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="app">
+            <div id="mood_canvas" class="hidden">
+                <span id="BTN_hide_mt">back</span>
+                <span id="moodText"></span>
+                <div id="trigger"></div>
+                <div id="saveMood" class="hidden">save mood</div>
+            </div>
+            <nav id="top_nav">
+                <i id="BTN_layla"><img src="frontend/assets/images/imgs/pexels-photo-30042.jpg"></i><span></span><i><img id="BTN_moodtracker" src="frontend/assets/images/UIComponents/BTNmood.svg"></i>
+            </nav>
+            <div id="scene_msg"></div>
+            <nav id="bottom_nav">
+                <i id="BTN_msg_plus"><img  src="frontend/assets/images/UIComponents/Oval%202%20Copy.svg"></i>
+                <div id="message_write">
+                    <textarea id="message_text" placeholder="send a message"></textarea>
+                </div>
+                <i id="BTN_msg_send1"><img alt="btn_send" src="frontend/assets/images/UIComponents/BTN_send1.svg"></i>
+            </nav>
+        </div>
+    </div>
+    <script type="text/javascript" src="frontend/js/app/appC.js"></script>
+    <script type="text/javascript" src="frontend/js/app/chat.js"></script>
+    <script type="text/javascript" src="frontend/js/app/Dom_mt.js"></script>
+</body>
+</html>
